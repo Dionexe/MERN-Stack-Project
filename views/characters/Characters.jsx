@@ -1,1 +1,2 @@
-const React = require('react');
+const React = require("react");
+const Def = require("../Default");
