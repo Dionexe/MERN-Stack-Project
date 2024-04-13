@@ -1,12 +1,10 @@
-import { response } from "express";
-
 const publicKey = process.env.PUBLIC_KEY;
 const privateKey = process.env.PRIVATE_KEY;
 const timeStamp = process.env.TIMESTAMP;
 const hash = process.env.HASH;
 const apiUrl = process.env.APIURL;
 
-export default function Search() {
+export function Search() {
     const [characterName, setCharacterName] = useState('');
     const [characterData, setCharacterData] = useState(null);
     const [comicData, setComicData] = useState(null);
@@ -37,6 +35,10 @@ export default function Search() {
 
     const handleChange = (event) => {
         setCharacterName(event.target.value);
+    };
+    
+    const handleReset = () => {
+
     };
     
     return <>
