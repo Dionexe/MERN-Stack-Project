@@ -35,16 +35,8 @@ export default function Search() {
         });
     };
 
-    const generateHash = () => {
-        return md5(timeStamp + publicKey + privateKey)
-    };
-
     const handleChange = (event) => {
         setCharacterName(event.target.value);
-    };
-    
-    const handleReset = () => {
-
     };
     
     return <>
@@ -61,4 +53,6 @@ export default function Search() {
 
     </form>
     </>;
-}
+};
+
+module.exports = character
