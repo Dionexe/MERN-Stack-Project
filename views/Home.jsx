@@ -14,7 +14,7 @@ function home() {
           </div>
         </div>
         <a href="/characters">
-          <button className="btn-primary">Hero Page</button>
+          <button className="btn-primary">Search</button>
         </a>
       </main>
     </Default>
